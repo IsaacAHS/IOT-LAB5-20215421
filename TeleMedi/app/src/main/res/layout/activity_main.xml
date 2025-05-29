@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <!-- Saludo dinámico -->
+    <TextView
+        android:id="@+id/textViewSaludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Hola, Usuario!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/accent_color"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="12dp" />
+
+    <!-- Mensaje motivacional -->
+    <TextView
+        android:id="@+id/textViewMensajeMotivacional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Sigue cuidando tu salud!"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <!-- Imagen de perfil -->
+    <ImageView
+        android:id="@+id/imageViewFotoPerfil"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_person_placeholder"
+        android:contentDescription="Foto de perfil"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_background"
+        android:padding="4dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Estadísticas -->
+    <TextView
+        android:id="@+id/textViewEstadisticas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tienes 0 medicamentos registrados"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:paddingBottom="24dp" />
+
+    <!-- Botón Ver Medicamentos -->
+    <Button
+        android:id="@+id/buttonVerMedicamentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver mis medicamentos"
+        android:backgroundTint="@color/accent_color"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón Configuraciones -->
+    <Button
+        android:id="@+id/buttonConfiguraciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Configuraciones"
+        android:backgroundTint="@color/accent_color"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

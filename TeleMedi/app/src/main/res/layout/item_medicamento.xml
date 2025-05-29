@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/background_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header del medicamento -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewNombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre del Medicamento"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary" />
+
+                <TextView
+                    android:id="@+id/textViewTipo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo: Pastilla"
+                    android:textSize="14sp"
+                    android:textColor="@color/accent_color"
+                    android:layout_marginTop="2dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_medication"
+                android:alpha="0.6"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <!-- Información del medicamento -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/textViewDosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dosis: 500mg"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/textViewFrecuencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cada 8 horas"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/textViewFechaInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inicio: 01/01/2024 08:00"
+                android:textSize="12sp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <!-- Botón eliminar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/buttonEliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eliminar"
+                android:textColor="@color/error_color"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

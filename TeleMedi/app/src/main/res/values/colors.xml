@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_pastilla">#2196F3</color>
+    <color name="color_jarabe">#FF9800</color>
+    <color name="color_ampolla">#4CAF50</color>
+    <color name="color_capsula">#9C27B0</color>
+    <!-- Colores principales de la app -->
+    <color name="primary_color">#2196F3</color>
+    <color name="primary_dark_color">#1976D2</color>
+    <color name="accent_color">#FF5722</color>
+
+    <!-- Colores de texto -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_tertiary">#BDBDBD</color>
+
+    <!-- Colores de estado -->
+    <color name="success_color">#4CAF50</color>
+    <color name="warning_color">#FF9800</color>
+    <color name="error_color">#F44336</color>
+
+    <!-- Colores de fondo -->
+    <color name="background_light">#FAFAFA</color>
+    <color name="background_white">#FFFFFF</color>
+    <color name="divider_color">#E0E0E0</color>
+
+</resources>
